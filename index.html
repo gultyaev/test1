@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 <!--  <script src="footer.js"></script>-->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EyeLeo</title>
 </head>
-<body id="bd">
-<div class="bg-top"></div>
-<div class="white-left"></div>
-<div class="white-right"></div>
+
+<body onload="call()">
+<div class="bg-top-pos">
+	<div class="bg-top">
+		<img src="images/background-top.png" />
+	</div>
+</div>
+
 	<div class="wrapper">
 			<div class="flex-item"><!--Top-side-->
-				<div class="flex">
+				<div class="flex-row flex-row-center">
 					<div class="logo1">EyeLeo</div><!--Mini-Logo-->
 					<nav><!--Navigation-->
 						<a href="#" class="nav-item">Features</a>
@@ -23,28 +28,75 @@
 				</div>
 				<header class="main-logo"><!--Header-->
 					<img src="images/main-logo.png" />
+					<figure class="lapki">
+						<img src="images/lapki/1.png" alt="" id="lapka1">
+						<img src="images/lapki/2.png" alt="" id="lapka2">
+						<img src="images/lapki/3.png" alt="" id="lapka3">
+						<img src="images/lapki/4.png" alt="" id="lapka4">
+						<img src="images/lapki/5.png" alt="" id="lapka5">
+						<img src="images/lapki/6.png" alt="" id="lapka6">
+					</figure>
 				</header>
-				<p class="descr flex-item">An app that keeps your eyes healthy.</p>
-				<p class="descr-2 flex-item">EyeLeo for Mac is an app that regulary reminds you to take a rest for your eyes, shows you simple eye exercises and prevents you from using Mac during these exercises. When you're working at a computer it's easy to forget about time. This leads to eye strain and other physical problems. EyeLeo guarantees you won't forget to take a break.</p>
-				<section class="flex flex-row">
-					<article class="flex-item">
+				
+				<section class="flex-column flex-block top-text"><!--Section0-->
+					<p class="descr flex-item">An app that keeps your eyes healthy.</p>
+					<p class="descr-2 flex-item">EyeLeo for Mac is an app that regulary reminds you to take a rest for your eyes, shows you simple eye exercises and prevents you from using Mac during these exercises. When you're working at a computer it's easy to forget about time. This leads to eye strain and other physical problems. EyeLeo guarantees you won't forget to take a break.</p>
+				</section>
+				
+				<section class="flex-block flex-row section__grey"><!--Section1-->
+					<article class="flex-item-1">
 						<p class="descr">Features:</p>
 						<p class="descr-2">
 							Screen blocking during break exercises. Short break with eye exercises. Visual explanation of every exercise. Notifications announcing a long break coming. Strict mode that doesn't allow skipping the breaks. Customizable preferences. and more...
 						</p>
 					</article>
-					<figure class="flex-item">
-						<img src="images/mac.png" alt="mac">
+					<figure class="flex-item-1">
+						<img class="image" src="images/mac.png" alt="mac">
 					</figure>
 				</section>
-				<section class="">
-					Section2
+				
+				<section class="flex-block flex-row flex-center-all  section__grey"><!--Section2-->
+					<div class="logo2 flex-item-1 flex-row-special">
+						<figure>
+							<img class="pos-logo" src="images/logo3.png" alt="logo">
+						</figure>
+						<p class="logo2-text">EyeLeo</p>
+					</div>
+					<div class="flex-item-1"><button class="buy">Buy Now</button></div>
 				</section>
 			</div>
+			
 			<footer>
-				footer
+				<div class="block">
+					<a href="#" class="text-bot">
+						About Us
+					</a>
+					<a href="#" class="text-bot">
+						Contact Us
+					</a>
+					<a href="#" class="fa-stack fa-lg">
+						<i class="fa fa-circle-o fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x"></i>
+					</a>
+					<a href="#" class="fa-stack fa-lg">
+						<i class="fa fa-circle-o fa-stack-2x"></i>
+						<i class="fa fa-google-plus fa-stack-1x"></i>
+					</a>
+					<a href="#" class="fa-stack fa-lg">
+						<i class="fa fa-circle-o fa-stack-2x"></i>
+						<i class="fa fa-twitter fa-stack-1x"></i>
+					</a>
+				</div>
+				<div class="block copy">&copy;Copyright 2016</div>
 			</footer>
 	</div>
 
+<div class="bg-bot-pos">
+	<div class="bg-bot">
+		<img src="images/bg-bot.png" />
+	</div>
+</div>
+<script src="lapki.js"></script>
 </body>
+
 </html>
